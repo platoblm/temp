@@ -1,0 +1,22 @@
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
+    }
+}
+
+apply plugin: "kotlin"
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile "org.postgresql:postgresql:${versions.postgres}",
+            "org.jooq:jooq:${versions.jooq}",
+            "org.flywaydb:flyway-core:${versions.flyway}"
+}
