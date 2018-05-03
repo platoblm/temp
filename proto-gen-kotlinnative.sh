@@ -3,5 +3,6 @@
 # Run with:
 # ./proto-gen-kotlin-native.sh arg1 arg2
 
-java -jar plugin/build/libs/plugin.jar "$@"
+# java -jar plugin/build/libs/plugin.jar "$@"
+echo "$0" >> script_logs
 
