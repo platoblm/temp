@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+
+package common;
+option java_package = "proto.common";
+option java_multiple_files = true;
+
+message Empty {
+}
+
+// Locat
+message LatLng {
+    float lat = 1;
+    float lng = 2;
+}
